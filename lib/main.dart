@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const CupertinoApp(
       title: 'Flutter Demo',
       theme: CupertinoThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.orange,
         primaryColor: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -40,6 +41,18 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  String getSO() {
+    if (kIsWeb) {
+      return ('is web');
+    } else if (defaultTargetPlatform == TargetPlatform.iOS) {
+      return ('is iOS');
+    } else if (defaultTargetPlatform == TargetPlatform.android) {
+      return ('is Android');
+    }
+
+    return ('Ni idea');
+  }
+
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -50,6 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(
+              getSO(),
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
