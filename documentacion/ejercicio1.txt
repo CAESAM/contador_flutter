@@ -1,9 +1,0 @@
-Para transformar el diseño basado en Material de la aplicación contador 
-a un diseño basado en Cupertino he realizado los siguientes cambios:
-    1.- MyApp devuelve un widget CupertinoApp con CupertinoThemeData para aplicar estilos Cupertino
-    2.- Se sustituye el Scaffold Material por defecto por CupertinoPageScaffold para representar 
-        la pantalla con estilo iOS.
-    3.- Se define el AppBar como CupertinoNavigationBar
-    4.- Al no tener CupertinoPageScaffold botón flotante como parámetro ya que es 
-        propio de las MaterialApp de Google, se colocan el texto, el contador y el botón
-        como widgest dentro de una columna centrada en un Center.

@@ -1,0 +1,5 @@
+He hecho varias pruebas para ver si conseguía implementar la generación de los distintos elementos de la aplicación 
+mediante Factories para ir un paso más allá de un simple if pero al final, por no invertir más tiempo, he dejado una mecla 
+un poco rara. No estoy muy contento. Funciona pero no es lo que pretendía. Todavía me faltan conocimientos del framework y de Dart.
+
+Hace lo que se pide en el enunciado pero no me gusta como ha quedado. Prefiero avanzar en el curso que atascarme aquí. Ya le daré una vuelta.
